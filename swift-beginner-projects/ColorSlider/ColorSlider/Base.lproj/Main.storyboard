@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="s8b-Cb-93M">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="KDr-6Q-A2f">
+            <objects>
+                <viewController id="s8b-Cb-93M" customClass="ViewController" customModule="ColorSlider" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="F82-1K-aaJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="jhc-cP-I67"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BKz-hf-MpL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yVe-kT-ISC">
+                                <rect key="frame" x="67" y="450" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cXA-Hj-PMB">
+                                <rect key="frame" x="24" y="137" width="334" height="130"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="lJJ-RK-0Bp">
+                                        <rect key="frame" x="0.0" y="0.0" width="162" height="130"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Red" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sqg-fA-pQ3">
+                                                <rect key="frame" x="0.0" y="0.0" width="37" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Green" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xmn-tX-hAz">
+                                                <rect key="frame" x="0.0" y="50" width="57" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g1y-Be-PIp">
+                                                <rect key="frame" x="0.0" y="100" width="42" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                <color key="textColor" red="0.29350187010000001" green="0.42050946820000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="0zc-sW-euv">
+                                        <rect key="frame" x="172" y="0.0" width="162" height="130"/>
+                                        <subviews>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="tU2-Wv-8Cg">
+                                                <rect key="frame" x="-2" y="0.0" width="166" height="31"/>
+                                                <connections>
+                                                    <action selector="changeColor" destination="s8b-Cb-93M" eventType="valueChanged" id="GWZ-IC-IzL"/>
+                                                </connections>
+                                            </slider>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Wn0-eJ-wyR">
+                                                <rect key="frame" x="-2" y="50" width="166" height="31"/>
+                                                <connections>
+                                                    <action selector="changeColor" destination="s8b-Cb-93M" eventType="valueChanged" id="VwX-6V-rD4"/>
+                                                </connections>
+                                            </slider>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="0tu-4w-Gj7">
+                                                <rect key="frame" x="-2" y="100" width="166" height="31"/>
+                                                <connections>
+                                                    <action selector="changeColor" destination="s8b-Cb-93M" eventType="valueChanged" id="DZV-wm-JVD"/>
+                                                </connections>
+                                            </slider>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yVe-kT-ISC" firstAttribute="leading" secondItem="BKz-hf-MpL" secondAttribute="leadingMargin" constant="51" id="1v9-Nu-q5u"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cXA-Hj-PMB" secondAttribute="trailing" constant="1" id="8wd-ej-nWF"/>
+                            <constraint firstItem="yVe-kT-ISC" firstAttribute="centerX" secondItem="BKz-hf-MpL" secondAttribute="centerX" id="Ayq-v9-uaX"/>
+                            <constraint firstItem="cXA-Hj-PMB" firstAttribute="leading" secondItem="BKz-hf-MpL" secondAttribute="leadingMargin" constant="8" id="WDV-MW-pCn"/>
+                            <constraint firstItem="yVe-kT-ISC" firstAttribute="top" secondItem="BKz-hf-MpL" secondAttribute="top" constant="450" id="pQO-wr-f0O"/>
+                            <constraint firstItem="cXA-Hj-PMB" firstAttribute="top" secondItem="F82-1K-aaJ" secondAttribute="bottom" constant="117" id="qNd-Uo-h7J"/>
+                            <constraint firstItem="jhc-cP-I67" firstAttribute="top" secondItem="yVe-kT-ISC" secondAttribute="bottom" constant="89" id="z8R-eQ-9nT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="blueSlider" destination="0tu-4w-Gj7" id="6H6-bw-1Us"/>
+                        <outlet property="colorView" destination="yVe-kT-ISC" id="SEr-TI-zyk"/>
+                        <outlet property="greenSlider" destination="Wn0-eJ-wyR" id="YDL-hL-ry4"/>
+                        <outlet property="redSlider" destination="tU2-Wv-8Cg" id="e9U-P4-gUU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JRC-LV-ZRN" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+</document>

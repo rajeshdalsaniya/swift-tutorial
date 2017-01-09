@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  HelloWorld
+//  ColorSlider
 //
 //  Created by Rajesh Dalsaniya on 09/01/17.
 //  Copyright © 2017 Rajesh Dalsaniya. All rights reserved.
