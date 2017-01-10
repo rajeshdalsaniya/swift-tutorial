@@ -8,7 +8,7 @@
 //
 
 /*
- A view that displays one or more lines of read-only text, often used in conjunction with controls to describe their intended purpose.
+ A UIButton object is a view that executes your custom code in response to user interactions.
  */
 
 // More info: https://developer.apple.com/reference/uikit/uibutton
