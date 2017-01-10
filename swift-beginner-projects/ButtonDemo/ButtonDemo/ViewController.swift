@@ -4,12 +4,22 @@
 //
 //  Created by Rajesh Dalsaniya on 10/01/17.
 //  Copyright © 2017 Rajesh Dalsaniya. All rights reserved.
+//  Website www.rajeshdalsaniya.com
 //
+
+/*
+ A view that displays one or more lines of read-only text, often used in conjunction with controls to describe their intended purpose.
+ */
+
+// More info: https://developer.apple.com/reference/uikit/uibutton
+
+
 
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    // MARK: Properties
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var changeButton: UIButton!
     @IBOutlet weak var resetButton: UIButton!
@@ -25,7 +35,8 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    // MARK: Actions - Change label text and reset it
     @IBAction func changeText(_ sender: UIButton) {
         label.text = "How are you ?"
         changeButton.isEnabled = false
