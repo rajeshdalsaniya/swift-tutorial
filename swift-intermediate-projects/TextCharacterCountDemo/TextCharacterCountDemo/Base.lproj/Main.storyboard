@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TextCharacterCountDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D9k-vq-VGo">
+                                <rect key="frame" x="49" y="164" width="277" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="fh9-dh-dKx"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intput text below" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJn-HQ-VWm">
+                                <rect key="frame" x="123.5" y="110" width="128" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="CLv-T1-ATQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZG-9Y-qKD">
+                                <rect key="frame" x="134" y="249" width="107" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="107" id="d35-mN-eMV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9990298152" green="0.88839513059999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DJn-HQ-VWm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KIl-N6-rv7"/>
+                            <constraint firstItem="D9k-vq-VGo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="33" id="MWU-f1-hDQ"/>
+                            <constraint firstItem="DJn-HQ-VWm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="90" id="S5G-p0-TVB"/>
+                            <constraint firstItem="DJn-HQ-VWm" firstAttribute="centerX" secondItem="D9k-vq-VGo" secondAttribute="centerX" id="SjJ-GC-OhV"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="aZG-9Y-qKD" secondAttribute="bottom" constant="318" id="cIa-6N-Wsa"/>
+                            <constraint firstItem="D9k-vq-VGo" firstAttribute="top" secondItem="DJn-HQ-VWm" secondAttribute="bottom" constant="33" id="mnJ-Df-pCv"/>
+                            <constraint firstItem="aZG-9Y-qKD" firstAttribute="top" secondItem="D9k-vq-VGo" secondAttribute="bottom" constant="55" id="o7a-Br-aS1"/>
+                            <constraint firstItem="D9k-vq-VGo" firstAttribute="centerX" secondItem="aZG-9Y-qKD" secondAttribute="centerX" id="rms-bU-iQi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="charCountLabel" destination="aZG-9Y-qKD" id="wVA-9H-1Zs"/>
+                        <outlet property="textField" destination="D9k-vq-VGo" id="DL1-qu-ubC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+</document>
