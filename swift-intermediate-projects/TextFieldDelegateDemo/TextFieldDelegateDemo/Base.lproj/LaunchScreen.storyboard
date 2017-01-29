@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cIs-Rq-9g5">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="veZ-1q-FFW">
+            <objects>
+                <viewController id="cIs-Rq-9g5" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tjU-oN-MlM"/>
+                        <viewControllerLayoutGuide type="bottom" id="EYf-cd-dxu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hhd-l7-rWd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ⓒ Rajesh Dalsaniya" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2LD-Br-J43">
+                                <rect key="frame" x="113" y="544" width="148" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="www.rajeshdalsaniya.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SkK-aQ-kmf">
+                                <rect key="frame" x="89" y="573" width="197" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WAVE18" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53k-eM-apJ">
+                                <rect key="frame" x="100" y="284" width="175" height="98"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="39"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="EYf-cd-dxu" firstAttribute="top" secondItem="SkK-aQ-kmf" secondAttribute="bottom" constant="73" id="3L7-mW-rp1"/>
+                            <constraint firstItem="53k-eM-apJ" firstAttribute="centerX" secondItem="2LD-Br-J43" secondAttribute="centerX" id="4Rn-KO-EDf"/>
+                            <constraint firstItem="2LD-Br-J43" firstAttribute="centerX" secondItem="SkK-aQ-kmf" secondAttribute="centerX" id="JhV-XR-IgB"/>
+                            <constraint firstItem="53k-eM-apJ" firstAttribute="leading" secondItem="hhd-l7-rWd" secondAttribute="leadingMargin" constant="84" id="LG3-Vn-ZJ2"/>
+                            <constraint firstItem="2LD-Br-J43" firstAttribute="centerX" secondItem="hhd-l7-rWd" secondAttribute="centerX" id="hNE-bc-H2H"/>
+                            <constraint firstItem="53k-eM-apJ" firstAttribute="centerY" secondItem="hhd-l7-rWd" secondAttribute="centerY" id="jho-Sa-bjh"/>
+                            <constraint firstItem="53k-eM-apJ" firstAttribute="top" secondItem="tjU-oN-MlM" secondAttribute="bottom" constant="264" id="pJr-TE-vgv"/>
+                            <constraint firstItem="SkK-aQ-kmf" firstAttribute="top" secondItem="2LD-Br-J43" secondAttribute="bottom" constant="8" symbolic="YES" id="vA0-90-33I"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wnP-AF-cdn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="50" y="149"/>
+        </scene>
+    </scenes>
+</document>
