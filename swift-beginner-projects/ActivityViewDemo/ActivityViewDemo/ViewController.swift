@@ -8,7 +8,7 @@
 //
 
 /*
- The UIActivityViewController class is a standard view controller that you can use to offer various services from your application. The system provides several standard services, such as copying items to the pasteboard, posting content to social media sites, sending items via email or SMS, and more. Apps can also define custom services. https://developer.apple.com/reference/uikit/uiactivityviewcontroller
+ The UIActivityViewController class is a standard view controller that you can use to offer various services from your application. The system provides several standard services, such as copying items to the pasteboard, posting content to social media sites, sending items via email or SMS, and more. Apps can also define custom services.   https://developer.apple.com/reference/uikit/uiactivityviewcontroller
  */
 
 import UIKit
@@ -32,7 +32,7 @@ class ViewController: UIViewController {
         let image = UIImage()
         // UIActivityViewController Object
         let controller = UIActivityViewController(activityItems: [name,image], applicationActivities: nil)
-        // Display Activity View
+        // Display Activity View Controller
         self.present(controller, animated: true, completion: nil)
     }
 
