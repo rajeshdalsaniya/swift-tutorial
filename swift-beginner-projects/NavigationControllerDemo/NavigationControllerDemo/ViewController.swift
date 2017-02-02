@@ -14,12 +14,20 @@
 
 // https://developer.apple.com/reference/uikit/uinavigationcontroller
 
-// Note: Navigation done without coding. Kindly check Main Storyboard for demo
+// Note: Navigation done without coding. Kindly check Main Storyboard for demo. Below only one method which used to start over (go back to root view)
 
 import UIKit
 
 class ViewController: UIViewController {
+    
 
+    // MARK: Action when user click on start over button root view controller will be displayed
+    @IBAction func startOver(_ sender: UIButton) {
+        
+        if let navigationController = navigationController {
+            navigationController.popToRootViewController(animated: true)
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
